@@ -21,4 +21,8 @@ async def ping(ctx):
 async def test(ctx):
     await ctx.send('テスト')
 
+@bot.command()
+async def embed(ctx):
+    embed = discord.Embed(title="Embedのテスト",description="起動してたら成功")
+
 bot.run(token)
