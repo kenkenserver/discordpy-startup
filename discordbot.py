@@ -24,5 +24,6 @@ async def test(ctx):
 @bot.command()
 async def embed(ctx):
     embed = discord.Embed(title="Embedのテスト",description="起動してたら成功")
+    await channel.send(embed=embed)
 
 bot.run(token)
