@@ -26,6 +26,6 @@ async def test(ctx):
 async def embed(ctx):
 
      embed = discord.Embed(title="Hi!!",description="How are you?")
-     await channel.send(embed=embed)
+     await ctx.send(embed=embed)
 
 bot.run(token)
