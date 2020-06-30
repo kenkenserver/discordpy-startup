@@ -23,7 +23,8 @@ async def test(ctx):
 
 @bot.command()
 async def embed(ctx):
-    embed = discord.Embed(title="Embedのテスト",description="起動してたら成功")
-    await ctx.send(embed=embed)
+     embed=discord.Embed(title="embedのテスト", description="見えてますか?", color=0x93e3fd)
+     embed.add_field(name="undefined", value="undefined", inline=False)
+     await self.bot.say(embed=embed)
 
 bot.run(token)
