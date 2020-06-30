@@ -17,5 +17,7 @@ async def on_command_error(ctx, error):
 async def ping(ctx):
     await ctx.send('pong')
 
+embed.add_field(name="サーバー",value="[招待コード](https://discord)")
+
 
 bot.run(token)
