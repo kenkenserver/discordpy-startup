@@ -16,10 +16,4 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def ping(ctx):
     await ctx.send('pong')
-
-@bot.command()
-async def fill(ctx):
-embed.add_field(name="サーバー",value="[招待コード](https://discord)")
-
-
 bot.run(token)
