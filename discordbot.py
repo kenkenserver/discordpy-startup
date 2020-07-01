@@ -26,6 +26,7 @@ async def test(ctx):
 async def embed(ctx):
      embed = discord.Embed(title="embedのテスト",description="送信テスト",color=discord.Colour.from_rgb(177,215,255))
      embed.add_field(name="フィールドのテスト",value="送信テスt(ry")
+     embed.set_thumbnail(url="https://m.box.com/file/685787952461/download?shared_link=https%3A%2F%2Fapp.box.com%2Fs%2Frq225l0odgu7ed6w6isgsb713sskbmvy")
      await ctx.send(embed=embed)
 
 bot.run(token)
