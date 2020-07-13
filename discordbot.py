@@ -31,10 +31,6 @@ async def embed(ctx):
 
 @bot.command()
 async def say(ctx, arg):
-     if message.author.guild_permissions.administrator:
        await ctx.send(arg)
-     else:
-       embed = discord.Embed(title="権限エラー",description="このコマンドはサーバー管理者のみが実行出来ます。",color=discord.Colour.from_rgb(177,215,255))
-       await ctx.send(embed=embed)
 
 bot.run(token)
