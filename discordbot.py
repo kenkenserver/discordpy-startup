@@ -29,12 +29,4 @@ async def embed(ctx):
      embed.set_thumbnail(url="https://m.box.com/file/685787952461/download?shared_link=https%3A%2F%2Fapp.box.com%2Fs%2Frq225l0odgu7ed6w6isgsb713sskbmvy")
      await ctx.send(embed=embed)
 
-@bot.command()
-async def suser(ctx):
-     guild = message.guild 
-     member_count = guild.member_count
-     user_count = sum(1 for member in guild.members if not member.bot)
-     embed = discord.Embed(title"このサーバーのユーザー数",description="このサーバーのメンバー数とユーザー数とbotユーザー数",color=discord.Colour.from_rgb(177,215,255))
-     await ctx.send(embed=embed)
-
 bot.run(token)
