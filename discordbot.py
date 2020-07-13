@@ -34,5 +34,6 @@ async def suser(ctx):
      member_count = guild.member_count
      user_count = sum(1 for member in guild.members if not member.bot)
      embed = discord.Embed(title"このサーバーのユーザー数,description="メンバー数:{member_count}\nユーザー数:{user_count}",color=discord.Colour.from_rgb(177,215,255))
+     await ctx.send(embed=embed)
 
 bot.run(token)
