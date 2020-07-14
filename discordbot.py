@@ -33,4 +33,9 @@ async def embed(ctx):
 async def say(ctx, arg):
        await ctx.send(arg)
 
+@bot.command()
+async def say(ctx, arg, arg2):
+     embed = discord.Embed(title=arg,description=arg2,color=discord.Colour.from_rgb(177,215,255))
+     await ctx.send(embed=embed)
+
 bot.run(token)
