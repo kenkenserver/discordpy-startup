@@ -38,4 +38,9 @@ async def emsay(ctx, arg):
      embed = discord.Embed(description=arg)
      await ctx.send(embed=embed)
 
+@bot.command()
+async def emsayc(ctx, arg1, arg2, arg3, arg4):
+     embed = discord.Embed(description=arg1,color=discord.Colour.from_rgb(arg2,arg3,arg4))
+     await ctx.send(embed=embed)
+
 bot.run(token)
